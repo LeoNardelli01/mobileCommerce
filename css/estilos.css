@@ -1,0 +1,111 @@
+
+html{
+  font-size: 15px;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* NOTE: header */
+
+.encabezado{
+  background: #111111;
+  color: black;
+  padding: 0.5rem 0;
+}
+
+.encabezado .container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.encabezado .logo img{
+  width: 90px;
+}
+
+/* NOTE: estilos btn buscar y menu */
+
+.boton-buscar,
+.boton-menu{
+  border: 0;
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 0 .5rem;
+  background: transparent;
+  color: white;
+}
+.boton-buscar:focus,
+.boton-menu:focus{
+  outline: 0;
+}
+
+.boton-buscar{
+  margin-left: auto;
+  margin-right: .8rem;
+}
+
+/* NOTE: estilos bloque buscar */
+
+#bloque-buscar{
+  flex: 1 1 100%;
+}
+.contenedor-bloque-buscar{
+  display: flex;
+  height: 3rem;
+  margin: 1rem 0;
+}
+
+.contenedor-bloque-buscar input[type="text"]{
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 1rem;
+}
+.contenedor-bloque-buscar input[type="submit"]{
+  flex: 1 1 auto;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: rgb(100, 218, 55);
+  color: white;
+}
+
+#menu-principal{
+  flex: 1 1 100%;
+}
+#menu-principal ul{
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0 0 0;
+}
+#menu-principal ul a{
+  display: block;
+  padding: .8rem 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  border-top: 1px solid rgb(115, 115, 115);
+  text-decoration: none;
+}
+#menu-principal ul a:hover,
+#menu-principal ul li.active a
+{
+  color: rgb(100, 218, 55);
+}
+
+
+.descripcion{
+  background-image: url("../images/banner.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+.descripcion h2{
+  color: white;
+}
+
+.descripcion p{
+  color: white;
+}
